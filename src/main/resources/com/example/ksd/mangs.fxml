@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ksd.MangsController">
+    <children>
+        <!-- Заголовок -->
+        <Label style="-fx-font-size: 24; -fx-font-weight: bold;" text="Добірка книг жанру манги: ">
+            <padding>
+                <Insets bottom="30.0" />
+            </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </Label>
+
+        <!-- Сітка з книгами -->
+        <GridPane hgap="20" maxHeight="20.0" maxWidth="20.0" minWidth="800.0" vgap="20">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="25.0" />
+                <ColumnConstraints percentWidth="25.0" />
+                <ColumnConstraints percentWidth="25.0" />
+                <ColumnConstraints percentWidth="25.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="100" />
+            </rowConstraints>
+            <children>
+                <!-- Книга 1 -->
+                <VBox alignment="CENTER" spacing="25.0">
+                    <children>
+                        <ImageView fitHeight="157.0" fitWidth="121.0" preserveRatio="true">
+                            <image>
+                                <Image url="@62229_124093_k.jpg" />
+                            </image>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="203.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: red;" text="Голограф веселки&#10;">
+                     <VBox.margin>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </VBox.margin></Label>
+                        <Label style="-fx-font-size: 12;" text="Ініо Асано">
+                     <VBox.margin>
+                        <Insets left="20.0" top="-10.0" />
+                     </VBox.margin></Label>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="315 грн">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin></Label>
+                        <Button fx:id="cart13" onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                            <VBox.margin>
+                                <Insets left="20.0" top="10.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+
+                <!-- Книга 2 -->
+                <VBox alignment="CENTER" spacing="25.0" GridPane.columnIndex="1">
+                    <children>
+                        <ImageView fitHeight="180.0" fitWidth="120.0" preserveRatio="true">
+                            <image>
+                                <Image url="@62230_124098_k.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: red;" text="Темний дворецький" />
+                        <Label style="-fx-font-size: 12;" text="Яна Тобосо">
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin></Label>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="200 грн" />
+                        <Button fx:id="cart14" onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+
+                <!-- Книга 3 -->
+                <VBox alignment="CENTER" spacing="25.0" GridPane.columnIndex="2">
+                    <children>
+                        <ImageView fitHeight="180.0" fitWidth="120.0" preserveRatio="true">
+                            <image>
+                                <Image url="@58808_117164_k.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: red;" text="Токійські месники" />
+                        <Label style="-fx-font-size: 12;" text="K. Wakui">
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin></Label>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="180 грн" />
+                        <Button fx:id="cart15" onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+
+                <!-- Книга 4 -->
+                <VBox alignment="CENTER" spacing="25.0" GridPane.columnIndex="3">
+                    <children>
+                        <ImageView fitHeight="180.0" fitWidth="120.0" preserveRatio="true">
+                            <image>
+                                <Image url="@60237_121755_k.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: red;" text="Оранж" />
+                        <Label style="-fx-font-size: 12;" text="Ініо Такано">
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin></Label>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="200 грн" />
+                        <Button fx:id="cart16" onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </GridPane>
+
+        <!-- Кнопка повернення до головного меню -->
+        <Button onAction="#goToMainMenu" prefWidth="200" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 16; -fx-background-radius: 20;" text="Головне меню">
+            <VBox.margin>
+                <Insets bottom="50.0" top="70.0" />
+            </VBox.margin>
+        </Button>
+    </children>
+</VBox>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="20" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ksd.HelloController">
+   <children>
+      <!-- Верхній текст з емодзі -->
+      <HBox alignment="CENTER" spacing="10">
+         <children>
+            <Label style="-fx-font-size: 30;" text="📖" />
+            <Label style="-fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: red;" text="Вас вітає КСД!" />
+            <Label style="-fx-font-size: 30;" text="📖" />
+         </children>
+         <padding>
+            <Insets top="-80.0" />
+         </padding>
+      </HBox>
+
+      <!-- Підзаголовок -->
+      <Label style="-fx-font-size: 20;" text="Оберіть жанр:" />
+
+      <!-- Кнопки -->
+      <VBox alignment="CENTER" spacing="15">
+         <children>
+            <!-- Верхній ряд кнопок -->
+            <HBox alignment="CENTER" spacing="20">
+               <children>
+                  <Button fx:id="fantasy" onAction="#openFantasyWindow" prefWidth="120" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 16; -fx-background-radius: 20;" text="Фентезі" />
+                  <Button fx:id="detectives" onAction="#openDetectives" prefWidth="120" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 16; -fx-background-radius: 20;" text="Детективи" />
+                  <Button fx:id="thrillers" onAction="#openThrillers" prefWidth="120" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 16; -fx-background-radius: 20;" text="Трилери" />
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </HBox>
+
+            <!-- Нижній ряд кнопок -->
+            <HBox alignment="CENTER" spacing="20">
+               <children>
+                  <Button fx:id="mangs" onAction="#openMangsWindow" prefWidth="120" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 16; -fx-background-radius: 20;" text="Манги" />
+                  <Button fx:id="psychology" onAction="#openPsychologyWindow" prefWidth="120" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 16; -fx-background-radius: 20;" text="Психологія" />
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
