@@ -48,7 +48,7 @@
                         <Insets top="-10.0" />
                      </VBox.margin></Label>
                         <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="230 грн" />
-                        <Button fx:id="cart5" onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                        <Button fx:id="cart5" onAction="#addToCart5" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
                             <VBox.margin>
                                 <Insets top="10.0" />
                             </VBox.margin>
@@ -70,7 +70,7 @@
                         <Insets top="-10.0" />
                      </VBox.margin></Label>
                         <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="250 грн" />
-                        <Button onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                        <Button onAction="#addToCart6" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
                             <VBox.margin>
                                 <Insets top="10.0" />
                             </VBox.margin>
@@ -92,7 +92,7 @@
                         <Insets top="-10.0" />
                      </VBox.margin></Label>
                         <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="250 грн" />
-                        <Button onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                        <Button onAction="#addToCart7" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
                             <VBox.margin>
                                 <Insets top="10.0" />
                             </VBox.margin>
@@ -114,7 +114,7 @@
                         <Insets top="-10.0" />
                      </VBox.margin></Label>
                         <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="410 грн" />
-                        <Button onAction="#openModal" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
+                        <Button onAction="#addToCart8" prefWidth="100" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12; -fx-background-radius: 20;" text="У кошик 🛒">
                             <VBox.margin>
                                 <Insets top="10.0" />
                             </VBox.margin>

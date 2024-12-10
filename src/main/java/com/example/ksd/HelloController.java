@@ -75,6 +75,15 @@ import java.io.IOException;
             stage.setScene(scene);
             stage.show();
         }
+        @FXML
+        private void openCart() throws IOException {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("cart.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 400, 500);
+            Stage stage = new Stage();
+            stage.setTitle("Ваш кошик");
+            stage.setScene(scene);
+            stage.show();
+        }
 
 
         @FXML
